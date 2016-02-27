@@ -2,7 +2,7 @@
 <html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-      <title>Insert title here</title>
+      <title>Angular Custom Filters and Tables Example</title>
       <!-- CSS -->
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css">
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -18,14 +18,7 @@
 	     <img src="assets/images/mobileDesktop.jpg" style="width:200px;height:100px; display: inline-block;"></img>
          <h2 style="display: inline-block; padding-left:30px;"></i>  Mo De </h2>
       </div>
-      <form>
-         <div class="git-location">
-            <h4 style="display: inline-block; width:190px;"> Select Project Location:</h4>
-			<input style="display: inline-block;" type="file">
-         </div>
-      </form>
 
-      </form>
       <div class="project-location">
          <h4 style="display: inline-block; width:190px;">  Select Execution Type:</h4>
          <select style="display: inline-block;" ng-model="executionTypeSelection" ng-options="p.option for p in executionTypeArr" ></select>
@@ -92,7 +85,7 @@
                <td>{{ device.os }}</td>
                <td>{{ device.version }}</td>
                <td>{{ device.location }}
-                  <button type="button" ng-click="doPost(device)">Click to Start!</button>
+
                </td>
             </tr>
          </tbody>
