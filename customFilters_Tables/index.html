@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+      <title>Insert title here</title>
+      <!-- CSS -->
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+      <style>
+         body { padding-top:50px; }
+      </style>
+      <!-- JS -->
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+      <script src="assets/js/mainCtrl.js"></script>
+   </head>
+   <div class="container" ng-app="mobileApp" ng-controller="mainController">
+      <div class="alert alert-info">
+	     <img src="assets/images/mobileDesktop.jpg" style="width:200px;height:100px; display: inline-block;"></img>
+         <h2 style="display: inline-block; padding-left:30px;"></i>  Mo De </h2>
+      </div>
+      <form>
+         <div class="git-location">
+            <h4 style="display: inline-block; width:190px;"> Select Project Location:</h4>
+			<input style="display: inline-block;" type="file">
+         </div>
+      </form>
+
+      </form>
+      <div class="project-location">
+         <h4 style="display: inline-block; width:190px;">  Select Execution Type:</h4>
+         <select style="display: inline-block;" ng-model="executionTypeSelection" ng-options="p.option for p in executionTypeArr" ></select>
+      </div>
+      <form>
+         <div class="exe-mode" style="padding-bottom:20px;">
+            <h4 style="display: inline-block; width:190px;"> Select Execution Mode:</h4>
+			<select style="display: inline-block;" ng-model="executionModeSelection" ng-options="p.option for p in executionModeArr" ></select>
+         </div>
+      </form>
+      <form style="width:70%; float:left;">
+         <div class="form-group">
+            <div class="input-group">
+               <div class="input-group-addon"><i class="fa fa-search"></i></div>
+               <input type="text" class="form-control" placeholder="Search the Browser" ng-model="searchDevice">
+            </div>
+         </div>
+      </form>
+      <img ng-src="{{imgSRC}}" style="float:right; width:320px;"></img>
+      <table class="table table-bordered table-striped" style="width:70%;float:left;">
+         <thead>
+            <tr>
+               <td>
+                  <a href="#" ng-click="sortType = 'devicename'; sortReverse = !sortReverse">
+                  Browser Name
+                  <span ng-show="sortType == 'devicename' && !sortReverse" class="fa fa-caret-down"></span>
+                  <span ng-show="sortType == 'devicename' && sortReverse" class="fa fa-caret-up"></span>
+                  </a>
+               </td>
+               <td>
+                  <a href="#" ng-click="sortType = 'ipAddress'; sortReverse = !sortReverse">
+                  Node IPAddress 
+                  <span ng-show="sortType == 'ipAddress' && !sortReverse" class="fa fa-caret-down"></span>
+                  <span ng-show="sortType == 'ipAddress' && sortReverse" class="fa fa-caret-up"></span>
+                  </a>
+               </td>
+               <td>
+                  <a href="#" ng-click="sortType = 'os'; sortReverse = !sortReverse">
+                  OS 
+                  <span ng-show="sortType == 'os' && !sortReverse" class="fa fa-caret-down"></span>
+                  <span ng-show="sortType == 'os' && sortReverse" class="fa fa-caret-up"></span>
+                  </a>
+               </td>
+               <td>
+                  <a href="#" ng-click="sortType = 'version'; sortReverse = !sortReverse">
+                  Browser Version 
+                  <span ng-show="sortType == 'version' && !sortReverse" class="fa fa-caret-down"></span>
+                  <span ng-show="sortType == 'version' && sortReverse" class="fa fa-caret-up"></span>
+                  </a>
+               </td>
+               <td>
+                  <a href="#" ng-click="sortType = 'location'; sortReverse = !sortReverse">
+                  Status
+                  <span ng-show="sortType == 'location' && !sortReverse" class="fa fa-caret-down"></span>
+                  <span ng-show="sortType == 'location' && sortReverse" class="fa fa-caret-up"></span>
+                  </a>
+               </td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr ng-repeat="device in devices | orderBy:sortType:sortReverse | filter:searchDevice | filterExecutionMode:executionModeSelection | filterExecutionType:executionTypeSelection">
+               <td><a href="#" ng-click="displayPhone(device.devicename)">{{ device.devicename }}</a></td>
+               <td>{{ device.ipAddress }}</td>
+               <td>{{ device.os }}</td>
+               <td>{{ device.version }}</td>
+               <td>{{ device.location }}
+                  <button type="button" ng-click="doPost(device)">Click to Start!</button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</html>
