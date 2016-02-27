@@ -1,4 +1,4 @@
-# angular_projects
+# Angular POC's
 This is the repository for various POC created using angularJS framework  
 
 
