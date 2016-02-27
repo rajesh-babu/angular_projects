@@ -1,0 +1,25 @@
+ [{ "devicename": "Chrome", "type":"browser", "ipAddress": "101.0.1.2.3", "os": "WIN", "version":"47", "multiMode": "false", "location":"" },
+
+ { "devicename": "IE", "type":"browser", "ipAddress": "101.0.1.2.3", "os": "WIN", "version":"11", "multiMode": "false", "location":"" },
+
+ { "devicename": "Safari", "type":"browser", "ipAddress": "101.0.1.2.5", "os": "MAC", "version":"9.0", "multiMode": "false", "location":"" },
+
+ { "devicename": "Firefox", "type":"browser", "ipAddress": "101.0.1.2.3", "os": "WIN", "version":"43", "multiMode": "false", "location":"" },
+
+ { "devicename": "Chrome", "type":"browser", "ipAddress": "101.0.1.2.4", "os": "WIN", "version":"44", "multiMode": "false", "location":"" },
+
+ { "devicename": "IE", "type":"browser", "ipAddress": "101.0.1.2.4", "os": "WIN", "version":"9", "multiMode": "false", "location":"" },
+
+ { "devicename": "Firefox", "type":"browser", "ipAddress": "101.0.1.2.4", "os": "WIN", "version":"42", "multiMode": "false", "location":"" },
+
+ { "devicename": "iphone Simulator", "type":"device", "ipAddress": "101.0.1.2.9", "os": "iOS", "version":"9.0", "multiMode": "false", "location":"" },
+
+ { "devicename": "Mobile Emulator", "type":"device", "ipAddress": "101.0.1.2.7", "os": "Android", "version":"4.4", "multiMode": "false", "location":"" },
+
+ { "devicename": "ipad Simulator", "type":"device", "ipAddress": "101.0.1.2.9", "os": "iOS", "version":"9.0", "multiMode": "false", "location":"" },
+
+ { "devicename": "Tablet Emulator", "type":"device", "ipAddress": "101.0.1.2.7", "os": "Android", "version":"4.4", "multiMode": "false", "location":"" },
+
+ { "devicename": "Tier1", "type":"browser", "ipAddress": "101.0.1.2.7", "os": "WIN", "version":"CH47,FF43,IE11", "multiMode": "true", "location":"" },
+
+ { "devicename": "Tier2", "type":"browser", "ipAddress": "101.0.1.2.8", "os": "WIN", "version":"CH44,FF42,IE9", "multiMode": "true", "location":"" } ]
