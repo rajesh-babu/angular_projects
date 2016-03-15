@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" ng-app="angularTable">
+  <head>
+    <meta charset="utf-8">
+    <title>Search Sort and Pagination in Angular js</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+  <body>
+	<div role="main" class="container theme-showcase">
+				<div id="reportDataSection" style="display:none;">
+			[{"rulename":"Auto-Generated-Redirect-1457854047650","asseturl":"/cs/ContentServer?id=1324352010695&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/devon","targeturl":"http://www1.tiaa-cref.org/tcm/devon","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"true"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"},{"rulename":"Auto-Generated-Redirect-1457854047621","asseturl":"/cs/ContentServer?id=1324352010670&AssetType=TIAA_Link&target=Variables.target&cs_environment=standard&pagename=OpenMarket%2FXcelerate%2FActions%2FContentDetailsFront&function=inspect&cs_formmode=WCM","sourcedomain":"public-www-at.test.tiaa.org","sourceurl":"/OpeningDoorsAlbany","targeturl":"https://publictools.tiaa-cref.org/public/publictools/events/eventswelcome?eventId=1-2P0VHCK","redirecttype":"301","copyquerystring":"Y","policyid":"3453","isactivated":"false"}]
+			</div>
+      <div class="" style="margin-top:90px;">
+        <div class="col-lg-12">
+			<div class="bs-component" ng-controller="listdata">
+
+				<form class="form-inline">
+					<div class="form-group">
+						<label >Search</label>
+						<input type="text" ng-model="search" class="form-control" placeholder="Search">
+					</div>
+					<div class="form-group" style="padding-left:20px;">
+						<label >Items Per Page:</label>
+						<input type="text" ng-model="noOfItemsPerPage" class="form-control">
+						<label>{{ pagination.current }}</label>
+					</div>
+				</form>
+				<table class="table table-striped table-hover" style="margin-top: 30px;">
+					<thead>
+						<tr class="gradientHeader">
+							<th ng-click="sort('rulename')">Rule Name
+								<span class="glyphicon sort-icon" ng-show="sortKey=='rulename'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('sourcedomain')">Source Domain URL
+								<span class="glyphicon sort-icon" ng-show="sortKey=='sourcedomain'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('sourceurl')">Source URL
+								<span class="glyphicon sort-icon" ng-show="sortKey=='sourceurl'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('targeturl')">Target URL
+								<span class="glyphicon sort-icon" ng-show="sortKey=='targeturl'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('redirecttype')">Redirected Type
+								<span class="glyphicon sort-icon" ng-show="sortKey=='redirecttype'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('copyquerystring')">Copy Query String
+								<span class="glyphicon sort-icon" ng-show="sortKey=='copyquerystring'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort('policyid')">Policy Id
+								<span class="glyphicon sort-icon" ng-show="sortKey=='policyid'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+							<th ng-click="sort(isactivated)">Is Activated?
+								<span class="glyphicon sort-icon" ng-show="sortKey=='isactivated'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr dir-paginate="report in reportDataArr|orderBy:sortKey:reverse|filter:search|itemsPerPage:noOfItemsPerPage">
+							<td><a href="{{report.asseturl}}" target="_blank">{{report.rulename}}</a></td>
+							<td>{{report.sourcedomain}}</td>
+							<td>{{report.sourceurl}}</td>
+							<td>{{report.targeturl}}</td>
+							<td>{{report.redirecttype}}</td>
+							<td>{{report.copyquerystring}}</td>
+							<td>{{report.policyid}}</td>
+							<td ng-style="{'background-color' : report.isactivated === 'true' ? '#73DC73' : 'yellow'}">{{report.isactivated === 'true' ? 'Activated' : 'Pending'}}</td>
+						</tr>
+					</tbody>
+				</table> 
+				<dir-pagination-controls
+					max-size="5"
+					direction-links="true"
+					boundary-links="true" >
+				</dir-pagination-controls>
+			</div>
+		</div>
+
+      </div>
+    </div>
+		<script src="js/angular/angular.js"></script>
+		<script src="js/dirPagination.js"></script>
+		<script src="js/edgeRedirectCtrl.js"></script>
+  </body>
+</html>
